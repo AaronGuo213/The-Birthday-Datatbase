@@ -1,0 +1,385 @@
+/*=====
+GENERAL
+=====*/
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #101010;
+}
+
+/*==================
+GREETING, DATE, TIME
+==================*/
+
+.topBlock {
+    width: 33.3%;
+    height: 250px;
+    float: left;
+}
+
+.mainHeader {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    float: left;
+}
+
+.mainHeader h1 {
+    font-size: 45px;
+    color: rgb(160,0,40); /*RED*/
+    /*color: #00A626; /*GREEN*/
+}
+
+.mainHeader h2 {
+    font-size: 30px;
+    color: rgb(160,0,40); /*RED*/
+    /*color: #00A626; /*GREEN*/
+}
+
+.quote {
+    position: absolute;
+    left: 35%;
+    top: 20px;
+    width: 30%;
+    text-align: center;
+    color: rgb(120,0,40); /*RED*/
+    /*color: #00A626; /*GREEN*/
+    font-size: 12px;
+}
+
+.clock {
+    width: 350px;
+    border-radius: 50px;
+    text-align: center;
+    /*transform: translateY(50%); for the weekly updating message*/
+    font-size: 40px;
+    margin: 50px auto 0px auto;
+    padding-bottom: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #1f1f1f;
+    background-color: rgb(140,0,40);
+}
+
+/*==========
+ASH PICTURES
+==========*/
+
+.images .nextImg {
+    border-radius: 5px;
+    width: 28.17%;
+    position: absolute;
+    position:fixed;
+    top: 10vh;
+    right: 2.565%;
+}
+
+.images .currentImg {
+    border-radius: 5px;
+    width: 28.17%;
+    position: absolute;
+    position:fixed;
+    top: 10vh;
+    right: 2.565%;
+}
+
+.frame {
+    position:absolute;
+    position:fixed;
+    border-radius: 5px;
+    right: 1%;
+    top: 2vh;
+    width: 31.3%;
+    border-radius: 5px;
+    background-color: rgb(140,0,40); /*RED*/
+    /*color: #00A626; /*GREEN*/
+}
+
+.prevFrame {
+    position:absolute;
+    position:fixed;
+    border-radius: 5px;
+    right: 1%;
+    top: 2vh;
+    width: 31.3%;
+    border-radius: 5px;
+    background-color: rgb(150,0,40); /*RED*/
+    /*color: #00A626; /*GREEN*/
+}
+
+/*=========
+ASH BUTTONS
+=========*/
+
+.ashButtons button {
+    width:3.3%;
+    height:5vh;
+    /*background-color:#008800; /*GREEN*/
+    background-color: rgb(110,0,30); /*RED*/
+    color: black;
+    font-weight: 800;
+    position:absolute;
+    position:fixed;
+    outline:none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.backwards {
+    top: 4vh;
+    right: 19%;
+}
+
+.pausePlay {
+    top: 4vh;
+    right: 15%;
+}
+
+.forwards {
+    top: 4vh;
+    right: 11%;
+}
+
+.backwards:active {
+    /*background-color: #53d853; /*GREEN*/
+    background-color: rgb(200,0,82); /*RED*/
+}
+
+.pausePlay:active {
+    /*background-color: #53d853; /*GREEN*/
+    background-color: rgb(200,0,82); /*RED*/
+}
+
+.forwards:active { 
+    /*background-color: #53d853; /*GREEN*/
+    background-color: rgb(200,0,82); /*RED*/
+}
+
+/*================
+NAVIGATION BUTTONS
+================*/
+
+.navBar li {
+    /*background-color: #00A626; /*GREEN*/
+    background-color: rgb(140,0,40); /*RED*/
+    color: black;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 10px;
+    margin: 0px 0.5% 30px 0.5%;
+    border-radius: 15px;
+    box-sizing: border-box;
+    float: left;
+    width: 32.3%;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+}
+
+.navBar .dropContent .tab {
+    margin: 10px 0px 0px -10px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navBar .tab .leftLogo {
+    width: 20px;
+    vertical-align: middle;
+    float: left;
+}
+
+.navBar .tab .rightLogo {
+    width: 20px;
+    vertical-align: middle;
+    float: right;
+}
+
+.dropContent {
+    display:none;
+    margin-top: 10px;
+    transform: translateX(4%);
+    position: absolute;
+    width: 80%;
+    z-index: 1;
+}
+
+.dropContent .tab {
+    float: none;
+    display: block;
+}
+
+.dropdown:hover .dropContent {
+    display:block;
+}
+
+.navBar li:hover .dropContent {
+    perspective:1000px;
+}
+
+.navBar li:hover .dropContent li{
+    transform-origin: top left;
+    opacity: 0;
+}
+
+.navBar li:hover .dropContent li:nth-child(1) {
+    animation: animate 50ms ease-in-out forwards;
+    animation-delay: -50ms;
+}
+
+.navBar li:hover .dropContent li:nth-child(2) {
+    animation: animate 50ms ease-in-out forwards;
+    animation-delay: 0ms;
+}
+
+.navBar li:hover .dropContent li:nth-child(3) {
+    animation: animate 50ms ease-in-out forwards;
+    animation-delay: 50ms;
+}
+
+.navBar li:hover .dropContent li:nth-child(4) {
+    animation: animate 50ms ease-in-out forwards;
+    animation-delay: 100ms;
+}
+
+.navBar li:hover .dropContent li:nth-child(5) {
+    animation: animate 50ms ease-in-out forwards;
+    animation-delay: 150ms;
+}
+
+.navBar li:hover .dropContent li:nth-child(6) {
+    animation: animate 50ms ease-in-out forwards;
+    animation-delay: 200ms;
+}
+
+.navBar li:hover .dropContent li:nth-child(7) {
+    animation: animate 50ms ease-in-out forwards;
+    animation-delay: 250ms;
+}
+
+.navBar li:hover .dropContent li:nth-child(8) {
+    animation: animate 50ms ease-in-out forwards;
+    animation-delay: 300ms;
+}
+
+.navBar li:hover .dropContent li:nth-child(9) {
+    animation: animate 50ms ease-in-out forwards;
+    animation-delay: 350ms;
+}
+
+.navBar li:hover .dropContent li:nth-child(10) {
+    animation: animate 50ms ease-in-out forwards;
+    animation-delay: 400ms;
+}
+
+.navBar li:hover .dropContent li:nth-child(11) {
+    animation: animate 50ms ease-in-out forwards;
+    animation-delay: 450ms;
+}
+
+.navBar li:hover .dropContent li:nth-child(12) {
+    animation: animate 50ms ease-in-out forwards;
+    animation-delay: 500ms;
+}
+
+.navBar li:hover .dropContent li:nth-child(13) {
+    animation: animate 50ms ease-in-out forwards;
+    animation-delay: 550ms;
+}
+
+.navBar li:hover .dropContent li:nth-child(14) {
+    animation: animate 50ms ease-in-out forwards;
+    animation-delay: 600ms;
+}
+
+.navBar li:hover .dropContent li:nth-child(15) {
+    animation: animate 50ms ease-in-out forwards;
+    animation-delay: 650ms;
+}
+
+@keyframes animate {
+    0%{
+        opacity:0;
+        transform: translateY(-200px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0px);
+    }
+}
+
+/*=============
+BIRTHDAY EVENTS
+=============*/
+
+.tasks {
+    padding-left: 20px;
+    width: 33%;
+    margin-left: 25px;
+    text-indent: -25px;
+    height: 1200px;
+}
+
+.tasks h1 {
+    font-size: 40px;
+}
+
+.tasks .taskList h2 {
+    font-size: 26px;
+    padding-top: 10px;
+}
+
+.tasks .taskList li {
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.tasks {
+    color: #D4D4D4;
+}
+
+.name, .rainbowName {
+    text-decoration: underline;
+}
+
+.name .popup, .rainbowName .popup {
+    position: absolute;
+    left: 0;
+}
+
+.name .popup .fName, .rainbowName .popup .fName {
+    visibility: hidden;
+    width: auto;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 3px 5px;
+    /* Position the tooltip */
+    position: relative;
+    left: 20px;
+    top: 22px;
+    z-index: 1;
+}
+
+.name:hover .fName, .rainbowName:hover .fName {
+    visibility: visible;
+}
+
+li .point {
+    position: relative;
+    left: -8px;
+}
