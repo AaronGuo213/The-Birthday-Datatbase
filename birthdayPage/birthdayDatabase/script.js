@@ -183,7 +183,6 @@ data.splice(data.length, 0, new Person("Nai Nai", "Guo", "", "Female", 15, 5, 19
 data.splice(data.length, 0, new Person("Wanping", "Yu", "Wanping Ayi", "Female", 9, 9, 1968));
 data.splice(data.length, 0, new Person("Gordon", "Guo", "Guoteng", "Male", 11, 11, 1990));
 data.splice(data.length, 0, new Person("Jian Xin", "Guo", "Tony's Dad", "Male", 3, 1, 1966));
-data.splice(data.length, 0, new Person("Dong Mei", "Pan", "Tony's Mom", "Female", 13, 10, 1967));
 data.splice(data.length, 0, new Person("Zhao Yang", "Guo", "Zhen's Dad", "Male", 19, 9, 1971));
 data.splice(data.length, 0, new Person("Ya Lien", "Zheng", "Zhen's Mom", "Female", 29, 6, 1971));
 data.splice(data.length, 0, new Person("April", "Peters", "", "Female", 30, 1, 2015));
@@ -223,7 +222,6 @@ data.splice(data.length, 0, new Person("Abbie", "Maemoto", "", "Female", 5, 12, 
 data.splice(data.length, 0, new Person("Grace's Dad", "Liu", "Grace's Dad", "Male", 16, 12, 0));
 data.splice(data.length, 0, new Person("Grace's Mom", "Liu", "Grace's Mom", "Female", 18, 7, 0));
 data.splice(data.length, 0, new Person("Amber", "Liu", "", "Female", 30, 4, 2015));
-data.splice(data.length, 0, new Person("ba co", "Quach", "ba co", "Female", 15, 12, 1922));
 data.splice(data.length, 0, new Person("Jordan", "Ewald", "", "Male", 22, 1, 2000));
 data.splice(data.length, 0, new Person("Ian", "Kim", "", "Male", 8, 11, 2002));
 data.splice(data.length, 0, new Person("Trent", "Giacalone", "", "Male", 16, 2, 2003));
@@ -260,14 +258,29 @@ data.splice(data.length, 0, new Person("Akshara", "Aditya", "", "Male", 15, 11, 
 data.splice(data.length, 0, new Person("Grant", "Liu", "", "Male", 25, 10, 2008));
 data.splice(data.length, 0, new Person("Harsha", "Gundala", "", "Male", 16, 11, 2002));
 data.splice(data.length, 0, new Person("Jon", "Nguyen", "", "Male", 7, 11, 2001));
-data.splice(data.length, 0, new Person("David ", "Lee", "", "Male", 3, 9, 2001));
 data.splice(data.length, 0, new Person("James", "Gill", "", "Male", 11, 11, 0));
-data.splice(data.length, 0, new Person("Erika", "Agena", "Zach's Girl", "Female", 10, 2, 2003));
-data.splice(data.length, 0, new Person("Myoung Suk", "Kim", "David's Mom", "Female", 30, 4, 1971));
-data.splice(data.length, 0, new Person("Jong Suk", "Lee", "David's Dad", "Male", 15, 8, 1971));
-data.splice(data.length, 0, new Person("Yujin", "Lee", "David's Sister", "Female", 22, 6, 1998));
 data.splice(data.length, 0, new Person("Joon", "Kim", "", "Male", 24, 6, 2002));
 data.splice(data.length, 0, new Person("Elisa", "Cordova", "", "Female", 22, 5, 2003));
+data.splice(data.length, 0, new Person("Brennan's Mom", "Lieu", "Brennan's Mom", "Male", 29, 9, 0));
+data.splice(data.length, 0, new Person("Brayan", "Velasco", "", "Male", 25, 3, 2003));
+data.splice(data.length, 0, new Person("Dong Mei", "Pan", "Tony's Mom", "Female", 12, 10, 1967));
+data.splice(data.length, 0, new Person("Vincent", "Wang", "", "Male", 15, 2, 0));
+data.splice(data.length, 0, new Person("Jeffrey", "Deng", "", "Male", 14, 2, 2001));
+data.splice(data.length, 0, new Person("Varun", "Bharadwaj", "", "Male", 26, 3, 2004));
+data.splice(data.length, 0, new Person("Vivian", "Wu", "", "Female", 10, 1, 2003));
+data.splice(data.length, 0, new Person("Ted", "Lieu", "Brennan's Dad", "Male", 29, 3, 0));
+data.splice(data.length, 0, new Person("Chris", "Young", "", "Male", 3, 11, 1962));
+data.splice(data.length, 0, new Person("Karen", "Nakamura", "", "Female", 27, 9, 2001));
+data.splice(data.length, 0, new Person("Shivana", "Anand", "", "Female", 22, 9, 2001));
+data.splice(data.length, 0, new Person("Nathaniel", "Macasaet", "Nath", "Male", 23, 10, 2003));
+data.splice(data.length, 0, new Person("Ryan", "Wu", "", "Male", 11, 7, 2007));
+data.splice(data.length, 0, new Person("Yeye", "Wu", "Vivian's Yeye", "Male", 11, 7, 0));
+data.splice(data.length, 0, new Person("Jack", "Baron", "", "Male", 2, 2, 0));
+data.splice(data.length, 0, new Person("Nitya", "Adapala", "", "Female", 2, 10, 2002));
+data.splice(data.length, 0, new Person("Rahul", "Singh", "", "Male", 30, 8, 1984));
+data.splice(data.length, 0, new Person("Ken", "Peterman", "", "Male", 22, 1, 1957));
+data.splice(data.length, 0, new Person("Craig", "Ellis", "", "Male", 27, 8, 1958));
+data.splice(data.length, 0, new Person("Miles", "Young", "", "Male", 26, 3, 2002));
 //hehe secret code
 
 /*=============
